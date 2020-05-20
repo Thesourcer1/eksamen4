@@ -1,0 +1,79 @@
+/* skrifttype */
+$inter-font: 'Inter UI', sans-serif;
+$roboto-font: 'Roboto', sans-serif;
+
+/* font størrelser */
+$font-lg: 60px;
+$font-md: 30px;
+$font-sm: 16px;
+
+/* farver */
+$darkgreen:#076633;
+$green:#79c47e;
+$graygreen: #516b5c;
+$black: #181818;
+$beige:#e7e7da;
+
+
+
+
+header {
+  .flag {
+    position: absolute;
+    z-index: 9999;
+    top: 20px;
+    right: 15px;
+
+    a {
+      text-decoration: none;
+      color: $darkgreen;
+      border-bottom: transparent;
+      line-height: 1;
+      font-size: $font-sm;
+      font-weight: lighter;
+      font-family: $inter-font $roboto-font;
+
+      :hover {
+        color: $black;
+      }
+    }
+  }
+  .logo {
+    padding: 53px 0 25px;
+    @media screen and (max-width: 768px) {
+      padding: 10px 0 5px !important;
+    }
+    h3 {
+      font-family: $inter-font $roboto-font;
+      font-weight: lighter;
+      color: $darkgreen;
+    }
+  }
+  .search {
+    float: right;
+
+    input {
+      background: rgba(121, 196, 126, 0.18);
+      padding: 6px 12px;
+      margin: 0;
+      border: 0;
+      max-height: 32px;
+      float: left;
+      height: 32px;
+      border-radius: 0;
+    }
+    button {
+      background: $darkgreen;
+      color: white;
+      padding: 6px 12px;
+      max-height: 32px;
+      float: left;
+      height: 32px;
+      border-radius: 0;
+      width: 35px;
+      cursor: pointer;
+      border: none;
+    }
+  }
+}
+
